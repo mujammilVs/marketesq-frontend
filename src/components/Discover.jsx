@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import { CiStar } from "react-icons/ci";
+
 import star from '../assets/svgs/star.svg'
 import profile from "../assets/profile.webp";
 import ladakh2 from "../assets/ladakh2.jpeg";
@@ -34,8 +35,8 @@ const Discover = () => {
                 <div className="flex flex-col">
                   <h2>Arjun Raghav</h2>
                   <div className="flex">
-                    {stars.map((each) => {
-                      return <img src={each.starLogo} className="w-3"/>
+                    {stars.map((each,index) => {
+                      return <img src={each.starLogo} key={index} className="w-3"/>
                     })}
                   </div>
                 </div>
@@ -65,8 +66,8 @@ const Discover = () => {
                   <div className="flex flex-col">
                     <h2>Arjun Raghav</h2>
                     <div className="flex">
-                    {stars.map((each) => {
-                      return <img src={each.starLogo} className="w-3"/>
+                    {stars.map((each, index) => {
+                      return <img src={each.starLogo} key={index}  className="w-3"/>
                     })}
                   </div>
                   </div>
@@ -96,8 +97,8 @@ const Discover = () => {
                   <div className="flex flex-col">
                     <h2>Arjun Raghav</h2>
                     <div className="flex">
-                    {stars.map((each) => {
-                      return <img src={each.starLogo} className="w-3"/>
+                    {stars.map((each,index) => {
+                      return <img src={each.starLogo} key={index} className="w-3"/>
                     })}
                   </div>
                   </div>
@@ -124,8 +125,8 @@ const Discover = () => {
                   <div className="flex flex-col">
                     <h2>Arjun Raghav</h2>
                     <div className="flex">
-                    {stars.map((each) => {
-                      return <img src={each.starLogo} className="w-3"/>
+                    {stars.map((each,index) => {
+                      return <img src={each.starLogo} key={index} className="w-3"/>
                     })}
                   </div>
                   </div>
