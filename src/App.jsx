@@ -9,7 +9,7 @@ import Footer from "./components/Footer.jsx";
 import CheckInForm from "./components/CheckInForm.jsx";
 const App = () => {
   return (
-    <Router>
+    <Router >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
